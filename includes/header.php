@@ -18,7 +18,7 @@ require_once 'kernel/kernel.php';
     <ul class="navigation-list">
       <li><a href="./index.php" class="navigation-list__item">Home</a></li>
       <li><a href="./news-feed.php" class="navigation-list__item">News Feed</a></li>
-      <li><a href="./auth.php" class="navigation-list__item">Log In</a></li>
-      <li><a href="./auth.php" class="navigation-list__item">Sign Up</a></li>
+      <li><a href="./auth.php#login" class="navigation-list__item">Log In</a></li>
+      <li><a href="./auth.php#signup" class="navigation-list__item">Sign Up</a></li>
     </ul>
   </nav>
