@@ -390,121 +390,121 @@ html,body{
 	cursor:pointer;
 	background:#29bf12;
 }
-.news-feed .posts-scrolling{
+.posts-scrolling{
 	width:100%;
 	height:auto;
 	background:#4895ef85;
 	margin-top:1vh;
 }
-.news-feed .user-post{
+.user-post{
 	max-width:50%;
 	margin:0 auto;
 	height:auto;
   background:white;
 	border-radius:0.4em;
 }
-.news-feed .user-post .post-heading{
+.user-post .post-heading{
 	width:100%;
 	max-height:18vh;
 }
-.news-feed .user-post .post-heading .post-heading__title{
+.user-post .post-heading .post-heading__title{
 	font-size:1.7rem;
 	text-align:center;
 	width:100%;
 	max-height:10vh;
 	padding-top:1em;
 }
-.news-feed .user-post .post-heading .post-heading-information{
+.user-post .post-heading .post-heading-information{
 	display:flex;
 	width:100%;
 	max-height:inherit;
 	justify-content:space-around;
 }
-.news-feed .user-post .post-heading .post-heading-information .post-heading-information__profile-pic{
+.user-post .post-heading .post-heading-information .post-heading-information__profile-pic{
 	max-width:15vw;
 	max-height:10vh;
 	border-radius:50%;
 }
-.news-feed .user-post .post-heading .post-heading-information .post-heading__author{
+.user-post .post-heading .post-heading-information .post-heading__author{
 	font-size:1rem;
 	font-weight:bolder;
 }
-.news-feed .user-post .post-heading .post-heading-information .post-heading__time{
+.user-post .post-heading .post-heading-information .post-heading__time{
 	font-size:0.8rem;
 	font-weight:bolder;
 	padding-top:0.7em;
 }
-.news-feed .user-post .post-body{
+.user-post .post-body{
 	max-width:100%;
 	height:auto;
 	font-size:1.1rem;
 	padding:1em;
 }
-.news-feed .user-post .fa-comments{
+.user-post .fa-comments{
 	font-size:1.3rem;
 	color:#f21b3f;
 	padding:1em;
 }
-.news-feed .user-post .fa-comments:hover{
+.user-post .fa-comments:hover{
   cursor:pointer;
 	color:#38a3a5;
 }
-.news-feed .user-post .comment-section{
+.user-post .comment-section{
 	max-width:100%;
 	height:auto;
 	font-size:1.1rem;
 	padding:1em;
 	border-top:0.1em solid black;
 }
-.news-feed .user-post .comment-section .comment-section__title{
+.user-post .comment-section .comment-section__title{
 	font-size:1.2rem;
 	font-weight:bolder;
 
 }
-.news-feed .user-post .comment-section .comments-block{
+.user-post .comment-section .comments-block{
 	border:0.1em solid black;
 	border-radius:0.2em;
 	margin-top:1em;
 	margin-bottom:1em;
 	padding:1em;
 }
-.news-feed .user-post .comment-section .comments-block .comments-author{
+.user-post .comment-section .comments-block .comments-author{
 	display:flex;
 	width:100%;
 	height:6vh;
 	justify-content:space-between;
 }
-.news-feed .user-post .comment-section .comments-block .comments-author__profile-pic{
+.user-post .comment-section .comments-block .comments-author__profile-pic{
 	border-radius:50%;
 	max-width:6vw;
 	max-height:6vh;
 }
-.news-feed .user-post .comment-section .comments-block .comments-author__author{
+.user-post .comment-section .comments-block .comments-author__author{
 	font-size:0.9rem;
 	font-weight:bolder;
 }
-.news-feed .user-post .comment-section .comments-block .comments-author__time{
+.user-post .comment-section .comments-block .comments-author__time{
 	font-size:0.8rem;
 	font-weight:bolder;
 }
-.news-feed .user-post .comment-section .comment-section-form{
+.user-post .comment-section .comment-section-form{
 	max-width:100;
 	height:auto;
 	display:flex;
 	flex-direction:column;
 	border-top:0.1em solid black;
 }
-.news-feed .user-post .comment-section .comment-section-form .comment-section-form__input{
+.user-post .comment-section .comment-section-form .comment-section-form__input{
 	border:0.1em solid black;
 	width:100%;
 	margin:1vh auto;
 	border-radius:0.2em;
 }
-.news-feed .user-post .comment-section .comment-section-form .comment-section-form__input:focus{
+.user-post .comment-section .comment-section-form .comment-section-form__input:focus{
 	outline:none;
   border:0.1em solid #4361ee;
 }
-.news-feed .user-post .comment-section .comment-section-form .comment-section-form__button{
+.user-post .comment-section .comment-section-form .comment-section-form__button{
 	background:#f21b3f;
 	border:none;
 	width:10vw;
@@ -515,7 +515,72 @@ html,body{
 	font-weight:bolder;
 	text-transform:uppercase;
 }
-.news-feed .user-post .comment-section .comment-section-form .comment-section-form__button:hover{
+.user-post .comment-section .comment-section-form .comment-section-form__button:hover{
+	cursor:pointer;
+	background:#29bf12;
+}
+.profile{
+	width:100%;
+	height:auto;
+}
+.profile .profile__title{
+	width:100%;
+	margin:0;
+	text-transform:uppercase;
+	font-size:2rem;
+	padding-top:1em;
+	text-align:center;
+	height:5vh;
+}
+.profile .profile-statistics{
+	width:100%;
+	max-height:20vh;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.profile .profile-statistics .profile-statistics__profile-pic{
+	max-width:13vh;
+	max-height:13vh;
+	border-radius:50%;
+}
+.profile .profile-statistics .profile-statistics__count{
+	max-width:100%;
+	font-size:1.2rem;
+	font-weight:bolder;
+}
+.profile .profile-form-block{
+	width:100%;
+	height:20vh;
+}
+.profile .profile-form-block .profile-form{
+	width:100%;
+	height:inherit;
+	display:flex;
+	flex-direction:column;
+}
+.profile .profile-form-block .profile-form .profile-form__input{
+	border:0.1em solid black;
+	width:50%;
+	margin:0 auto;
+	border-radius:0.2em;
+}
+.profile .profile-form-block .profile-form .profile-form__input:focus{
+	outline:none;
+  border:0.1em solid #4361ee;
+}
+.profile .profile-form-block .profile-form .profile-form__button{
+	background:#f21b3f;
+	border:none;
+	width:10vw;
+	height:5vh;
+	border-radius:0.2em;
+	margin:1em auto;
+	color:white;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+.profile .profile-form-block .profile-form .profile-form__button:hover{
 	cursor:pointer;
 	background:#29bf12;
 }

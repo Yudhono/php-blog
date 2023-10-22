@@ -2,7 +2,7 @@
   <section class="profile" id="profile">
     <h1 class="profile__title">Welcome Fullname</h1>
     <div class="profile-statistics">
-      <img src="public/images/profile.png" alt="Profile picture" class=profile-statistics__profile-pic>
+      <img src="public/images/profile.png" alt="Profile picture" class="profile-statistics__profile-pic">
       <p class="profile-statistics__count">Posts published:30</p>
       <p class="profile-statistics__count">Comments adding:30</p>
       <p class="profile-statistics__count">Files uploaded:30</p>
@@ -16,11 +16,11 @@
       </form>
     </div>
     <div class="posts-scrolling">
-      <article class="user-post">
+       <article class="user-post">
         <header class="post-heading">
           <h1 class="post-heading__title">Post title</h1>
           <div class="post-heading-information">
-            <img src="public/images/profile.png" alt="User profile picture in the post">
+            <img src="public/images/profile.png" alt="User profile picture in the post" class="post-heading-information__profile-pic">
             <p class="post-heading__author">Alexander Lamdan</p>
             <p class="post-heading__time">Created at: 12:06 pm, 23 October, 2023</p>
           </div>
@@ -32,14 +32,56 @@
         </section>
         <a id="commentsIcon"><i class="fa-regular fa-comments"></i></a>
         <section class="comment-section">
+          <p class="comment-section__title">Comments:</p>
           <div class="comments-scrolling">
             <div class="comments-block">
               <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
               </p>
+              <div class="comments-author">
+                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
+                <p class="comments-author__author">Alexander Lamdan</p>
+                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
+              </div>
+            </div>
+             <div class="comments-block">
+              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
+              </p>
+              <div class="comments-author">
+                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
+                <p class="comments-author__author">Alexander Lamdan</p>
+                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
+              </div>
+            </div>
+             <div class="comments-block">
+              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
+              </p>
+              <div class="comments-author">
+                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
+                <p class="comments-author__author">Alexander Lamdan</p>
+                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
+              </div>
+            </div>
+             <div class="comments-block">
+              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
+              </p>
+              <div class="comments-author">
+                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
+                <p class="comments-author__author">Alexander Lamdan</p>
+                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
+              </div>
+            </div>
+             <div class="comments-block">
+              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
+              </p>
+              <div class="comments-author">
+                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
+                <p class="comments-author__author">Alexander Lamdan</p>
+                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
+              </div>
             </div>
           </div>
           <form method="POST" action="news-feed.php" class="comment-section-form">
-            <input type="text" name="comment" class="comment-section-form__input" id="comment" placeholder="Enter comment">
+            <textarea type="text" name="comment" class="comment-section-form__input" id="comment" placeholder="Enter comment"></textarea>
             <input type="submit" name="addComment" id="addComment" class="comment-section-form__button" value="Add">
           </form>
         </section>
