@@ -9,12 +9,21 @@
       <p class="profile-statistics__count">Last log time:30</p>
     </div>
     <hr class="profile__line">
+    <div class="profile-form-block">
+      <form method="POST" action="news-feed.php" class="profile-form">
+        <textarea class="profile-form__input" id="textarea" name="textarea" type="text" placeholder="Write your post here" cols=45 rows=15></textarea>
+        <input type="submit" name="addPost" id="addPost" value="Add Post" class="profile-form__button">
+      </form>
+    </div>
     <div class="posts-scrolling">
       <article class="user-post">
         <header class="post-heading">
           <h1 class="post-heading__title">Post title</h1>
-          <p class="post-heading__author">Alexander Lamdan</p>
-          <p class="post-heading__time">Created at: 12:06 pm, 23 October, 2023</p>
+          <div class="post-heading-information">
+            <img src="public/images/profile.png" alt="User profile picture in the post">
+            <p class="post-heading__author">Alexander Lamdan</p>
+            <p class="post-heading__time">Created at: 12:06 pm, 23 October, 2023</p>
+          </div>
         </header>
         <section class="post-body">
           <p class="post-body__text">
@@ -29,6 +38,10 @@
               </p>
             </div>
           </div>
+          <form method="POST" action="news-feed.php" class="comment-section-form">
+            <input type="text" name="comment" class="comment-section-form__input" id="comment" placeholder="Enter comment">
+            <input type="submit" name="addComment" id="addComment" class="comment-section-form__button" value="Add">
+          </form>
         </section>
       </article>
     </div>
