@@ -584,3 +584,166 @@ html,body{
 	cursor:pointer;
 	background:#29bf12;
 }
+.settings{
+	width:100%;
+	height:auto;
+	background:url('../images/background.png')no-repeat center;
+	background-size:cover;
+}
+.settings .settings__title{
+	width:100%;
+	margin:0;
+	text-transform:uppercase;
+	font-size:2rem;
+	padding-top:1em;
+	text-align:center;
+	height:5vh;
+}
+.settings .settings__description{
+	 width:100%;
+	height:4vh;
+	text-transform:uppercase;
+	font-size:1.2rem;
+	padding-top:1em;
+	text-align:center;
+}
+.settings .settings-profile{
+  width:100%;
+}
+.settings .settings-profile .settings-profile__title{
+	width:100%;
+	margin:0;
+	text-transform:uppercase;
+	font-size:1.5rem;
+	padding-top:1em;
+	text-align:center;
+	height:5vh;
+	color:white;
+}
+.settings .settings-profile .settings-profile__description{
+	width:100%;
+	height:4vh;
+	text-transform:uppercase;
+	font-size:1rem;
+	padding-top:1em;
+	text-align:center;
+	color:white;
+	font-weight:bolder;
+}
+.settings .settings-profile .settings-profile-form{
+	max-width:26%;
+	background:#023047;
+	border-radius:0.3em;
+	height:auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+	padding:2em;
+}
+.settings .settings-profile .settings-profile-form .settings-profile-form__label{
+	color:white;
+	font-size:1rem;
+	font-weight:bolder;
+	margin-top:0.5em;
+	text-transform:uppercase;
+}
+.settings .settings-profile .settings-profile-form .settings-profile-form__input{
+  border:none;
+	background:none;
+	border-radius:none;
+	border-bottom:0.1em solid #06d6a0;
+	padding-top:1em;
+}
+.settings .settings-profile .settings-profile-form .settings-profile-form__input::placeholder{
+  color:white;
+	font-weight:bolder;
+}
+.settings .settings-profile .settings-profile-form .settings-profile-form__input:focus{
+  outline:none;
+  border-bottom:0.1em solid #f15bb5;
+}
+.settings .settings-profile .settings-profile-form .settings-profile-form__button{
+  background:#ff9914;
+	border:none;
+	width:10vw;
+	height:5vh;
+	border-radius:0.2em;
+	margin:1em auto;
+	color:white;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+.settings .settings-profile .settings-profile-form .settings-profile-form__button:hover{
+  cursor:pointer;
+	background:#29bf12;
+}
+.settings .settings-account{
+  width:100%;
+}
+.settings .settings-account .settings-account__title{
+	width:100%;
+	margin:0;
+	text-transform:uppercase;
+	font-size:1.5rem;
+	padding-top:1em;
+	text-align:center;
+	height:5vh;
+	color:white;
+}
+.settings .settings-account .settings-account__description{
+	width:100%;
+	height:4vh;
+	text-transform:uppercase;
+	font-size:1rem;
+	padding-top:1em;
+	text-align:center;
+	color:white;
+	font-weight:bolder;
+}
+.settings .settings-account .settings-account-form{
+	max-width:26%;
+	background:#023047;
+	border-radius:0.3em;
+	height:auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+	padding:2em;
+}
+.settings .settings-account .settings-account-form .settings-account-form__label{
+	color:white;
+	font-size:1rem;
+	font-weight:bolder;
+	margin-top:0.5em;
+	text-transform:uppercase;
+}
+.settings .settings-account .settings-account-form .settings-account-form__input{
+  border:none;
+	background:none;
+	border-radius:none;
+	border-bottom:0.1em solid #06d6a0;
+	padding-top:1em;
+}
+.settings .settings-account .settings-account-form .settings-account-form__input::placeholder{
+  color:white;
+	font-weight:bolder;
+}
+.settings .settings-account .settings-account-form .settings-account-form__input:focus{
+  outline:none;
+  border-bottom:0.1em solid #f15bb5;
+}
+.settings .settings-account .settings-account-form .settings-account-form__button{
+  background:#ff9914;
+	border:none;
+	width:10vw;
+	height:5vh;
+	border-radius:0.2em;
+	margin:1em auto;
+	color:white;
+	font-weight:bolder;
+	text-transform:uppercase;
+}
+.settings .settings-account .settings-account-form .settings-account-form__button:hover{
+  cursor:pointer;
+	background:#29bf12;
+}
