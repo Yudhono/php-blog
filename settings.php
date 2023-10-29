@@ -1,4 +1,14 @@
-<?php require_once 'includes/header.php';?>
+<?php
+require_once 'includes/header.php';
+
+if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
+
+	header('Location:auth.php');
+
+}
+
+
+?>
   <section class="settings">
     <h1 class="settings__title">Settings page</h1>
     <p class="settings__description">Here you can change your settings in profile and change your account settings</p>

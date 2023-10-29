@@ -1,1 +1,10 @@
 <?php
+session_name('PHPBlog');
+session_start();
+session_unset();
+unset($_SESSION['uid']);
+unset($_SESSION['username']);
+session_destroy();
+session_write_close();
+header('Location:auth.php');
+exit;

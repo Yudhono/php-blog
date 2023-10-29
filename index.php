@@ -1,4 +1,6 @@
-<?php include_once 'includes/header.php';?>
+<?php
+include_once 'includes/header.php';
+?>
   <header class="heading" id="heading">
     <h1 class="heading__title">Welcome to my PHP Blog</h1>
     <p class="heading__text">Here you can write posts, comment and other stuff</p>

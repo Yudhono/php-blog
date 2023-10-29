@@ -160,7 +160,7 @@ html,body{
 }
 .footer{
 	width:100%;
-	height:13vh;
+	height:auto;
 	background:black;
 	color:white;
 	display:flex;
@@ -243,6 +243,7 @@ html,body{
 	border-radius:none;
 	border-bottom:0.1em solid #06d6a0;
 	padding-top:1em;
+	color:white;
 }
 .signup .signup-form .signup-form__input:focus{
 	outline:none;
@@ -273,6 +274,16 @@ html,body{
 	background:url('../images/background.png')no-repeat center;
 	background-size:cover;
 	display:none;
+}
+.login .login__message-error{
+	background: red;
+	max-width:100%;
+	color:white;
+	font-size:1rem;
+	border-radius:0.2em;
+	height:5vh;
+	line-height:2em;
+	text-align:center;
 }
 .login .login__title{
 	width:100%;
@@ -306,6 +317,7 @@ html,body{
 	border-radius:none;
 	border-bottom:0.1em solid #06d6a0;
 	padding-top:1em;
+	color:white;
 }
 .login .login-form .login-form__input:focus{
 	outline:none;
@@ -522,6 +534,16 @@ html,body{
 .profile{
 	width:100%;
 	height:auto;
+}
+.profile .profile__success-message{
+	background: #29bf12;
+	width:100%;
+	color:white;
+	font-size:1.2rem;
+	border-radius:0.2em;
+	height:5vh;
+	line-height:2em;
+	text-align:center;
 }
 .profile .profile__title{
 	width:100%;

@@ -1,4 +1,14 @@
-<?php require_once 'includes/header.php';?>
+<?php
+require_once 'includes/header.php';
+
+if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
+
+	header('Location:auth.php');
+
+}
+
+
+?>
   <section class="news-feed">
     <h1 class="news-feed__title">News feed</h1>
     <p class="news-feed__text">Check new posts here from any user</p>

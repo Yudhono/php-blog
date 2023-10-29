@@ -1,5 +1,18 @@
-<?php require_once 'includes/header.php';?>
+<?php
+require_once 'includes/header.php';
+
+if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
+
+	header('Location:auth.php');
+
+}
+
+
+?>
   <section class="profile" id="profile">
+    <?php if(isset($_SESSION['success']) && !empty($_SESSION['success'])):?>
+      <p class="profile__success-message"><?=$_SESSION['success']?></p>
+    <?php endif;?>
     <h1 class="profile__title">Welcome Fullname</h1>
     <div class="profile-statistics">
       <img src="public/images/profile.png" alt="Profile picture" class="profile-statistics__profile-pic">
