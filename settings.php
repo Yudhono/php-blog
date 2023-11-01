@@ -1,13 +1,6 @@
 <?php
 require_once 'includes/header.php';
 
-if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
-
-	header('Location:auth.php');
-
-}
-
-
 ?>
   <section class="settings">
     <h1 class="settings__title">Settings page</h1>
@@ -16,7 +9,7 @@ if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
     <div class="settings-profile">
       <h2 class="settings-profile__title"> Change your profile information here</h2>
       <p class="settings-profile__description">Add profile picture, add more information about you.</p>
-      <form method="POST" action="profile.php" class="settings-profile-form">
+      <form method="POST" class="settings-profile-form">
         <label for="fullname" class="settings-profile-form__label">Fullname:</label>
         <input type="text" name="fullname" id="fullname" class="settings-profile-form__input" placeholder="Enter fullname">
         <input type="submit" name="change" id="change" class="settings-profile-form__button" value="Save">

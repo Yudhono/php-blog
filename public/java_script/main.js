@@ -10,11 +10,11 @@ setTimeout(()=>{
 let signupLink = document.querySelector('#signupLink');
 let loginLink = document.querySelector('#loginLink');
 
-loginLink.addEventListener('click',checkLoginOn,false);
+loginLink.addEventListener('onhashchange',checkLoginOn,false);
 
 function checkLoginOn(){
 
-	if(window.location.href.includes('#login')){
+	if(window.location.hash === '#login'){
 
 		let loginForm = document.getElementById('loginSection');
 		loginForm.style.display = 'block';
@@ -26,11 +26,11 @@ function checkLoginOn(){
 }
 checkLoginOn();
 
-signupLink.addEventListener('click',checkSignupOn,false);
+signupLink.addEventListener('onhashchange',checkSignupOn,false);
 
 function checkSignupOn(){
 
-	if(window.location.href.includes('#signup')){
+	if(window.location.hash === '#signup'){
 
 		let loginForm = document.querySelector('#loginSection');
 		loginForm.style.display = 'none';
@@ -41,3 +41,4 @@ function checkSignupOn(){
 
 }
 checkSignupOn();
+

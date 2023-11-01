@@ -1,15 +1,5 @@
 <?php
 require_once 'includes/header.php';
-
-signUp();
-logIn();
-
-if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
-
-	header('Location:profile.php?uid='.$_SESSION['uid']);
-
-}
-
 ?>
   <section class="signup" id="signupSection">
     <h1 class="signup__title">Sign Up</h1>
@@ -31,9 +21,7 @@ if(isset($_SESSION['uid']) && !empty($_SESSION['uid'])){
       <label for="password" class="login-form__label">Password:</label>
       <input type="password" name="password" id="password" class="login-form__input" placeholder="Enter password">
       <input type="submit" name="login" id="logIn" class="login-form__button" value="Log In">
-			<?php if(isset($_SESSION['error']) && !empty($_SESSION['error'])):?>
-        <p class="login__message-error"><?=$_SESSION['error']?></p>
-       <?php endif;?>
+        <p class="login__message-error">error</p>
     </form>
   </section>
 <?php require_once 'includes/footer.php';?>

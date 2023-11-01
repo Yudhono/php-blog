@@ -1,25 +1,16 @@
 <?php
 require_once 'includes/header.php';
-
-if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
-
-	header('Location:auth.php');
-
-}
-
-
 ?>
-  <section class="profile" id="profile">
-    <?php if(isset($_SESSION['success']) && !empty($_SESSION['success'])):?>
-      <p class="profile__success-message"><?=$_SESSION['success']?></p>
-    <?php endif;?>
-    <h1 class="profile__title">Welcome Fullname</h1>
+    <section class="profile" id="profile">
+
+      <p class="profile__success-message">Success</p>
+    <h1 class="profile__title">Welcome</h1>
     <div class="profile-statistics">
       <img src="public/images/profile.png" alt="Profile picture" class="profile-statistics__profile-pic">
-      <p class="profile-statistics__count">Posts published:30</p>
-      <p class="profile-statistics__count">Comments adding:30</p>
-      <p class="profile-statistics__count">Files uploaded:30</p>
-      <p class="profile-statistics__count">Last log time:30</p>
+      <p class="profile-statistics__count">Posts published:No posts</p>
+      <p class="profile-statistics__count">Comments adding:No comments</p>
+      <p class="profile-statistics__count">Files uploaded: No files</p>
+      <p class="profile-statistics__count">Last log time:</p>
     </div>
     <hr class="profile__line">
     <div class="profile-form-block">
@@ -48,42 +39,6 @@ if(!isset($_SESSION['uid']) && empty($_SESSION['uid'])){
           <p class="comment-section__title">Comments:</p>
           <div class="comments-scrolling">
             <div class="comments-block">
-              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-              </p>
-              <div class="comments-author">
-                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
-                <p class="comments-author__author">Alexander Lamdan</p>
-                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
-              </div>
-            </div>
-             <div class="comments-block">
-              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-              </p>
-              <div class="comments-author">
-                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
-                <p class="comments-author__author">Alexander Lamdan</p>
-                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
-              </div>
-            </div>
-             <div class="comments-block">
-              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-              </p>
-              <div class="comments-author">
-                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
-                <p class="comments-author__author">Alexander Lamdan</p>
-                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
-              </div>
-            </div>
-             <div class="comments-block">
-              <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-              </p>
-              <div class="comments-author">
-                <img src="public/images/profile.png" alt="User profile picture in the post" class="comments-author__profile-pic">
-                <p class="comments-author__author">Alexander Lamdan</p>
-                <p class="comments-author__time">Created at: 12:06 pm, 23 October, 2023</p>
-              </div>
-            </div>
-             <div class="comments-block">
               <p class="comments-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t   empor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
               </p>
               <div class="comments-author">

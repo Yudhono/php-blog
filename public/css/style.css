@@ -675,6 +675,7 @@ html,body{
 	border-radius:none;
 	border-bottom:0.1em solid #06d6a0;
 	padding-top:1em;
+	color:white;
 }
 .settings .settings-profile .settings-profile-form .settings-profile-form__input::placeholder{
   color:white;
@@ -745,6 +746,7 @@ html,body{
 	border-radius:none;
 	border-bottom:0.1em solid #06d6a0;
 	padding-top:1em;
+	color:white;
 }
 .settings .settings-account .settings-account-form .settings-account-form__input::placeholder{
   color:white;
