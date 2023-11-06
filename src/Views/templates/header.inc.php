@@ -20,6 +20,6 @@ require_once 'vendor/autoload.php';
       <li><a href="./settings.php" class="navigation-list__item" >Settings</a></li>
       <li><a href="./logout.php" class="navigation-list__item">Logout</a></li>
 			<li><a href="./auth.php#login" class="navigation-list__item" id="loginLink">Log In</a></li>
-			<li><a href="./auth.php#signup" class="navigation-list__item" id="signupLink">Sign Up</a></li>
+			<li><a href="./auth.php" class="navigation-list__item" id="signupLink">Sign Up</a></li>
     </ul>
   </nav>
