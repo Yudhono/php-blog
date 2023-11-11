@@ -1,1 +1,9 @@
 <?php
+  session_name('PHPBlog');
+  session_start();
+	session_destroy();
+  session_unset();
+  unset($_GET['uid']);
+  unset($_SESSION);
+  header('Location:./auth.php');
+  die;

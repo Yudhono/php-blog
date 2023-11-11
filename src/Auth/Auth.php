@@ -1,13 +1,12 @@
 <?php
 namespace Auth;
 use DB\DB;
-
 class Auth{
   public $username;
 	public $email;
 	public $password;
   public $db;
-	
+	public $obj;
 	public function signUp(){
 
 	  
@@ -51,9 +50,22 @@ class Auth{
 			  $this->password = filter_input(INPUT_POST,'password');
 			
 			  $this->db = new DB();
-				
-				
+			  $result = $this->db->dbcon->query("SELECT * FROM users");
+				$this->obj = $result;
+				while($this->obj = $result->fetch_object()){
+
+		      if($this->email == $this->obj->email && $this->password == password_verify($this->password,$this->obj->password)){
+						
+						return $this->obj;
+						
+					}else if($this->email != $this->obj->email && $this->password != password_verify($this->password,$this->obj->password)){
+						
+						return false;
+						
+					}
+				}
 			}
 		}
 	}
 }
+
