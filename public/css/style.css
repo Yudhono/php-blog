@@ -284,6 +284,7 @@ html,body{
 	height:5vh;
 	line-height:2em;
 	text-align:center;
+	display:block;
 }
 .login .login__title{
 	width:100%;

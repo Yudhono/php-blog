@@ -12,9 +12,6 @@
         <li><a href="./auth.php#login" class="list-nav-links__item" id="loginLink">Log In</a></li>
         <li><a href="./auth.php#signup" class="list-nav-links__item" id="signupLink">Sign Up</a></li>
       <?php endif;?>
-          
-          
-          
       </ul>
       <ul class="list-links">
         <li><a href="./LICENSE" class="list-links__item">License</a></li>

@@ -56,11 +56,14 @@ class Auth{
 
 		      if($this->email == $this->obj->email && $this->password == password_verify($this->password,$this->obj->password)){
 						
+						$_SESSION['uid'] = $this->obj->id;
+						header('Location:./profile.php?uid='.$this->obj->id);
 						return $this->obj;
 						
 					}else if($this->email != $this->obj->email && $this->password != password_verify($this->password,$this->obj->password)){
 						
-						return false;
+						$_SESSION['error'] = 'The email or password are not correct, please try again';
+						return $this->obj;
 						
 					}
 				}

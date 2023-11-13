@@ -9,4 +9,3 @@ $auth = new Auth();
 
 $auth->signUp();
 $auth->logIn();
-$page->userId();

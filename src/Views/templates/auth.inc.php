@@ -18,6 +18,8 @@
       <label for="password" class="login-form__label">Password:</label>
       <input type="password" name="password" id="password" class="login-form__input" placeholder="Enter password">
       <input type="submit" name="login" id="logIn" class="login-form__button" value="Log In">
-        <p class="login__message-error">error</p>
+      <?php if(isset($_SESSION['error'])):?>
+      <p class="login__message-error"><?=$_SESSION['error']?></p>
+      <?php endif;?>
     </form>
   </section>
